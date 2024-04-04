@@ -29,14 +29,16 @@ This project aims to build scientific capacity in Chisasibi by monitoring blue c
 This project aims to initiate a long-term monitoring program to support community-driven decision-making on environmental conservation locally and across James Bay. Our approach is to monitor a suite of biophysical and climate change indicators in strategic blue carbon ecosystems using Cree TEK and scientific methods. Assessments will understand the cumulative impacts and emerging threats to these ecosystems. Monitoring activities will concentrate on the north of La Grande river. Using monitoring data, we hope to gain the necessary depth and breadth of knowledge to understand blue carbon ecosystems' current and future state, ecosystem services, and impacts on traditional practices through this strategy.
 
 # Methods
-We visited several sites during the summer of 2021 and 2022. Using a suite of environmental monitoring methods, we collected the following baseline data on eelgrass, saltmarsh, and fens.
+We visited several sites during the summer of 2021, 2022, and 2023. Using a suite of environmental monitoring methods, we collected the following baseline data on eelgrass habitats.
 * Sediment cores
-* Historical (for eelgrass) and current distribution
+* Historical and current distribution
 * Collection and measurement of plant samples
 * Water quality indicators
 * Presence or absence of potentially harmful algal blooms
 
-This data will be integral to assessing the target ecosystems' role as greenhouse gas sinks or sources. The information also contributes to answering guide questions about the state of the target ecosystem:
+In addition, we Sent the sediment cores for analyses to the GEOTOP lab at the University of Quebec in Montreal and obtained the results of organic carbon estimates and Lead210 dating for the accumulation rates. 
+
+These s data will be integral to assessing the target ecosystems' role as greenhouse gas sinks or sources. The information also contributes to answering guide questions about the state of the target ecosystem:
 
 1. How much organic carbon (C) is James Bay blue carbon ecosystems accumulating per unit area per year? 
 2. What are the threats to blue carbon ecosystems, and how do these threats affect the sequestration rate of blue carbon in James Bay and their traditional ecosystem services? 
@@ -44,13 +46,14 @@ This data will be integral to assessing the target ecosystems' role as greenhous
 4. How does climate change impact blue carbon accumulation in James Bay?
 5. What management actions best maintain and promote carbon sequestration and traditional use of blue carbon ecosystems in James Bay? 
 
-# Accomplishment to Date
+# Accomplishments to Date
 * Collection of sediment cores
 * Ten days of fieldwork on eelgrass sites of potential coring for organic carbon estimation (Figure 1)
 * Collected environmental and other water quality parameters
 * Collected and measured eelgrass samples
 * Collected traditional knowledge on the historical distribution of eelgrass
 * Collection and identification of harmful algal or cyanobacterial blooms and diatoms
+* Analyses of core sections for percent organic carbon, Pb210 dating, and sediment accretion rates.
 
 ```{r echo=FALSE, fig.cap="Eelgrass ecosystem sampling locations", out.width = '100%', fig.align='center'}
 knitr::include_graphics("BlueCarbonSites.png")
@@ -59,35 +62,24 @@ knitr::include_graphics("BlueCarbonSites.png")
 ## Procurement of laboratory equipment
 **Percent accomplishment: 100**
 
-Despite delays in procurement and delivery, the project acquired needed scientific and field equipment and
-successfully carried out fieldwork. All the equipment and consumables needed for water quality monitoring have
-been delivered. Purchase of additional equipment is ongoing.
+Despite delays in procurement and delivery, the project acquired needed scientific and field equipment and successfully carried out fieldwork. All the equipment and consumables needed for water quality monitoring have been delivered. Purchase of additional equipment is ongoing.
 
 ## Sampling program
-**Percent accomplishment: 20**
+**Percent accomplishment: 100**
 
-The trapline tallymen provided the knowledge that guided site selection. These sites are precise and have a long history of resource use and they also represent areas where land users have observed environmental changes throughout the years. Last fall, we finally collected sediment cores from 3 out of 4 target sites. However, we could not have them analyzed sooner because of the lack of a laboratory to do analyses immediately. Lately, we all lost the samples to fire when our storage building burnt down while waiting for the cores to be analyzed . 
+The trapline tallymen provided the knowledge that guided site selection. These sites are precise and have a long history of resource use and they also represent areas where land users have observed environmental changes throughout the years. Last fall, we finally collected sediment cores from 2 target sites, one with thriving eelgrass and one from marginal eelgrass beds.
 
+## Analyses of core samples
+** Percent accomplishment: 95** 
+Two cores were sent out to the GEOTOP lab at the University of Quebec in Montreal for percent organic carbon, isotope analyses, and Pb210 dating. The results has been received and interpretation of the data are on-going. 
 
-## Highlights 
+## Hiring and training of local youth
 
-**Hiring and training of youth co-researchers**
-
-The funding contributes to the partial salaries of 2 co-researcher. This co-researcher was involved in the last fieldwork and will be assisting again in this year's field campaign. Also, these co-researcher received training in environmental and water quality monitoring.
-
+The funding contributes to the partial salaries of 2 co-researcher. This co-researcher was involved in all the fieldwork  and were trained to conduct core sampling and preparation of core sections.  They received training in using universal coring devices and core extrusion in the field.
  
-**Training and consultation workshops with land-users and participatory mapping**
+## Community meeting with or presenting to local leadership and/or community ** 
 
-We consulted three tallymen from 3 different traplines and obtained the historical distribution of eelgrass. We could have involved more land users, but COVID restrictions prevented meeting more people. This year we will be consulting the remaining seven coastal tallymen.
-
- 
-**Community consultations/interviews to define environmental monitoring priorities, research strategies and relevant traditional ecological indicators **
-
-We only consulted three tallymen as interactions within the community were very limited. We are planning to do more consultations this year.
- 
-**Meeting with or presenting to local leadership and/or community ** 
-
-We made two presentations to the CERRI board about the project and one presentation to the general community assembly. Community members were learning blue carbon and climate change concepts. Still, they were interested in exploring the synergy between enhancing the blue carbon ecosystem to make them more productive as a carbon sink and productive waterfowl habitats. They also wanted to know more about algae and cyanobacteria and how it affects traditional resources like fisheries.
+We made two presentations to the CERRI board about the project and one presentation to the general community assembly. Community members were learning blue carbon and climate change concepts. The community were interested in exploring the synergy between enhancing the blue carbon ecosystem to make them more productive as a carbon sink and waterfowl habitats. They also wanted to know more about algae and cyanobacteria and how it affects traditional resources like fisheries.
 
 ## Key Findings
 ### Eelgrass 
