@@ -110,9 +110,35 @@ On the other hand, the $\delta$ 15N values in core C01 (marginal eelgrass) sampl
 ### Percent Organic Carbon
 
 
+```{r summary-stats-org-carbon, echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
 
+# Load the data from Excel file
+data <- read_excel("loi_data.xlsx")
 
+# Calculate summary statistics for percent organic carbon for each site
+summary_stats <- data %>%
+  group_by(SITEID) %>%
+  summarise(
+    Count = n(),
+    Mean = mean(`%C-org`, na.rm = TRUE),
+    SD = sd(`%C-org`, na.rm = TRUE),
+    Min = min(`%C-org`, na.rm = TRUE),
+    `1st Qu.` = quantile(`%C-org`, 0.25, na.rm = TRUE),
+    Median = median(`%C-org`, na.rm = TRUE),
+    `3rd Qu.` = quantile(`%C-org`, 0.75, na.rm = TRUE),
+    Max = max(`%C-org`, na.rm = TRUE)
+  ) %>%
+  ungroup() # to remove the grouping
+# Use knitr to create a table in the output document
+knitr::kable(summary_stats, format = "markdown", caption = "Summary Statistics of Percent Organic Carbon")
+  
+```
+The t-test comparing the percent organic carbon (%C-org) between the two sites yields a t-statistic of approximately 4.456 and a p-value of approximately 0.0000507. Given that the p-value is less than the common significance level of 0.05, we can reject the null hypothesis and conclude that site C01(marginal eelgrass) has a significantly higher organic than the site with eelgrass (C04).
 
+Regarding soil organic carbon density site C01 has a higher mean soil organic carbon density as well as a higher median, indicating generally greater organic carbon density in the soil at this site compared to site C04. The variability, as indicated by the standard deviation, is also lower at C01 than at C04. The average soil organic carbon density of the two sites was approximately 0.02055 g/cm^3^, which translates to 20.55 kg/m^3^.
 
 
 
