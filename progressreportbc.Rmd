@@ -44,7 +44,7 @@ In addition, we sent the sediment cores for analysis to the GEOTOP lab at the Un
 4. How does climate change impact blue carbon accumulation in James Bay?
 5. What management actions best maintain and promote carbon sequestration and traditional use of blue carbon ecosystems in James Bay? 
 
-# Accomplishments to Date
+# Project Accomplishments
 * Collection of sediment cores
 * Ten days of fieldwork on eelgrass sites of potential coring for organic carbon estimation (Figure 1)
 * Collected environmental and other water quality parameters
@@ -57,7 +57,6 @@ In addition, we sent the sediment cores for analysis to the GEOTOP lab at the Un
 knitr::include_graphics("BlueCarbonSites.png")
 
 ```
-
 
 ## Procurement of laboratory equipment
 **Percent accomplishment: 100**
@@ -82,8 +81,8 @@ The funding contributes to the partial salaries of 2 co-researcher. This co-rese
 
 We made two presentations to the CERRI board about the project and one presentation to the general community assembly. Community members were learning blue carbon and climate change concepts. The community were interested in exploring the synergy between enhancing the blue carbon ecosystem to make them more productive as a carbon sink and waterfowl habitats. They also wanted to know more about algae and cyanobacteria and how it affects traditional resources like fisheries.
 
-## Key Findings
-### General eelgrass state and ecology of core sampling sites 
+# Key Findings
+## General eelgrass state and ecology of core sampling sites 
 
 Eelgrass beds at the two coring sites are marginally different. Eelgrass plants on the first site were healthier and cleaner, and had longer leaves. On the contrary, the second sampling location has marginal to no eelgrass growth. Also, the second eelgrass site had enourmous mats of microalgae and cyanobacteria. We are currently identifying the species of cyanobacteria found in that location to understand its toxicity and impacts on eelgrass and waterfowl.
 
@@ -92,16 +91,32 @@ knitr::include_graphics("CyanoBacteria.png")
 
 ```
 
-### Sediment core characteristics
-The sediment cores varied in length.  
+## Sediment core characteristics
+The sediment cores varied in length and substrate characteristics. The site with eelgrass had the deepest sediment at 96 cm while the marginal eelgrass site had about half of the depth(65 cm). In addition, the site with eelgrass is more silty and clayey while the other site had more sand.
 ```{r echo=FALSE, fig.cap="Eelgrass sediment cores", out.width = '50%', fig.align='center', out.extra='angle=-90'}
 knitr::include_graphics("sedcores.jpg")
 
 ```
 
 ### Isotope Analyses
+Stable isotope analyses provide valuable insights into the nature of James Bay eelgrass sediments. The results are expressed in delta notation ($\delta$) measures the ratios of stable isotopes of carbon(13C/12C) and nitrogen(15N/14N) in samples.  Results  expressed as part per thousand (ppt)  deviation from a standard material. $\delta$ 13C values provides information of the carbon sources in the sediment while $\delta$ 15N values values provide information about the nitrogen sources and cycling in the ecosystem. In marine environments, $\delta$ 15N values can vary widely, influenced by sources of nitrogen (like upwelling, nitrogen fixation, or anthropogenic inputs) and processes like denitrification. 
+
+The $\delta$ 13C ranges are typicall between -300&#8240; to +50&#8240;.  More negative values indicate a dominance of terrestrial influence (tress and shrubs-C3 plants), while less negative values suggest marine sources (C4 plants). Typical $\delta$ 13C values of seagrass is around -11&#8240; closely resembling C4 species. C3 and c4 plants in terrestrial environments have $\delta$ 13C values around -28&#8240;  to -14&#8240;, respectively (Touchette and Burkholder 2000).
+
+The $\delta$ 13C results from the core sample with eelgrass (C04) ranges from -14.7&#8240; to -24.91&#8240; while the core without eelgrass (C01) ranges from -15.97&#8240; to -20.58&#8240;. The more negative values in lower end of core C04 values indicate significant incorporation or mixing of terrestrial organic matter, which is typically more 13C-depleted compared to marine organic matter while the range of values from C01 suggests a predominance of marine organic carbon with a possible minor influence from terrestrial sources(Canuel et al., 1997).
+
+On the other hand, the $\delta$ 15N values in core C01 (marginal eelgrass) sample ranging from +2.00&#8240; to +5.71&#8240; and core (C04-eelgrass beds) with $\delta$ 15N values between 1.79&#8240; and 4.44&#8240;both suggest that primary production and early consumer interactions dominate(eelgrass and phytoplankton), with marine sources of nitrogen being significant and little influence from denitrification or terrestrial inputs. 
 
 ### Percent Organic Carbon
+
+
+
+
+
+
+
+
+
 
 ### Lead (Pb)210 Dating
 
@@ -111,4 +126,3 @@ knitr::include_graphics("sedcores.jpg")
 3. What is the state of James Bay eelgrass and other coastal ecosystems as blue carbon sinks/sources?
 4. How does climate change impact blue carbon accumulation in James Bay?
 5. What management actions best maintain and promote carbon sequestration and traditional use of blue carbon ecosystems in James Bay?
-
