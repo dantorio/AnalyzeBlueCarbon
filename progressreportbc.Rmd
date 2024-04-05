@@ -119,7 +119,7 @@ library(knitr)
 data <- read_excel("loi_data.xlsx")
 
 # Calculate summary statistics for percent organic carbon for each site
-summary_stats <- data %>%
+summary_stats_percentc <- data %>%
   group_by(SITEID) %>%
   summarise(
     Count = n(),
@@ -133,21 +133,64 @@ summary_stats <- data %>%
   ) %>%
   ungroup() # to remove the grouping
 # Use knitr to create a table in the output document
-knitr::kable(summary_stats, format = "markdown", caption = "Summary Statistics of Percent Organic Carbon")
+knitr::kable(summary_stats_percentc, format = "markdown", caption = "Summary Statistics of Percent Organic Carbon")
   
 ```
 The t-test comparing the percent organic carbon (%C-org) between the two sites yields a t-statistic of approximately 4.456 and a p-value of approximately 0.0000507. Given that the p-value is less than the common significance level of 0.05, we can reject the null hypothesis and conclude that site C01(marginal eelgrass) has a significantly higher organic than the site with eelgrass (C04).
 
 Regarding soil organic carbon density site C01 has a higher mean soil organic carbon density as well as a higher median, indicating generally greater organic carbon density in the soil at this site compared to site C04. The variability, as indicated by the standard deviation, is also lower at C01 than at C04. The average soil organic carbon density of the two sites was approximately 0.02055 g/cm^3^, which translates to 20.55 kg/m^3^.
 
+```{r summary-stats-dens-carbon, echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
 
+# Load the data from Excel file
+data <- read_excel("loi_data.xlsx")
+
+# Calculate summary statistics for percent organic carbon for each site
+summary_stats_denc <- data %>%
+  group_by(SITEID) %>%
+  summarise(
+    Count = n(),
+    Mean = mean(`SoilOrgCDensity_gcm3`, na.rm = TRUE),
+    SD = sd(`SoilOrgCDensity_gcm3`, na.rm = TRUE),
+    Min = min(`SoilOrgCDensity_gcm3`, na.rm = TRUE),
+    `1st Qu.` = quantile(`SoilOrgCDensity_gcm3`, 0.25, na.rm = TRUE),
+    Median = median(`SoilOrgCDensity_gcm3`, na.rm = TRUE),
+    `3rd Qu.` = quantile(`SoilOrgCDensity_gcm3`, 0.75, na.rm = TRUE),
+    Max = max(`SoilOrgCDensity_gcm3`, na.rm = TRUE)
+  ) %>%
+  ungroup() # to remove the grouping
+# Use knitr to create a table in the output document
+knitr::kable(summary_stats_denc, format = "markdown", caption = "Summary Statistics of Soil Organic Carbon Density (g/m^3^")
+  
+```
 
 
 
 ### Lead (Pb)210 Dating
 
 # Conclusion
-1. How much organic carbon (C) is James Bay blue carbon ecosystems accumulating per unit area per year? 
+1. How much organic carbon (C) is James Bay blue carbon ecosystems accumulating per unit area? 
+
+Based on the previous calculation, the average soil organic carbon density of the two sites was approximately 0.02055 g/cm^3^, which translates to 20.55 kg/m^3^.
+
+**Carbon Sequestered in 1 square kilometer of eelgrass Soil**  
+Based on the previous calculation, the average soil organic carbon density of the two sites was approximately 0.02055 g/cm³, which translates to 20.55 kg/m³ when converted to kilograms per cubic meter (kg/m³).
+
+**Carbon Sequestered in 1 Square Kilometer of Eelgrass Soil:**
+- Volume of soil in 1 square kilometer area with 1 meter thickness = \(1,000,000 \, \text{m}^2 \times 1 \, \text{m} = 1,000,000 \, \text{m}^3\).
+- Carbon sequestered = Volume of soil \(\times\) Average soil carbon density = \(1,000,000 \, \text{m}^3 \times 20.55 \, \text{kg/m}^3 = 20,550,000 \, \text{kg}\) of carbon.
+
+**Equivalent Motor Vehicle Emissions:**
+- Assuming 1 kg of soil organic carbon sequesters about 3.67 kg of CO2 (based on the molecular weight ratio of CO2 to C), the total CO2 sequestered would be \(20,550,000 \, \text{kg} \times 3.67 = 75,417,350 \, \text{kg of CO2}\).
+- Converting kilograms to metric tons (since 1 metric ton = 1,000 kg), we get \(75,417,350 \, \text{kg} / 1,000 = 75,417.35 \, \text{metric tons of CO2}\).
+- Given that an average passenger vehicle emits about 4.6 metric tons of CO2 per year, the number of vehicle emissions this amount of CO2 sequestration represents is \(75,417.35 \, \text{metric tons CO2} / 4.6 \, \text{metric tons 
+CO2/vehicle/year} \approx 16,393.77 \, \text{vehicles/year}\).
+
+Therefore, a square kilometer of eelgrass soil with 1 meter thickness, having the average soil carbon density observed in the two sites, can sequester approximately 75,417.35 metric tons of CO2. This is equivalent to the annual emissions from approximately 16,394 motor vehicles.
+
 2. What are the threats to blue carbon ecosystems, and how do these threats affect the sequestration rate of blue carbon in James Bay and their traditional ecosystem services? 
 3. What is the state of James Bay eelgrass and other coastal ecosystems as blue carbon sinks/sources?
 4. How does climate change impact blue carbon accumulation in James Bay?
