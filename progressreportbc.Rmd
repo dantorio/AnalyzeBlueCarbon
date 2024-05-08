@@ -30,6 +30,7 @@ This project aims to initiate a long-term monitoring program to support communit
 
 # Methods
 We visited several sites during the summer of 2021, 2022, and 2023. We collected the following baseline data on eelgrass habitats using environmental monitoring methods.
+
 * Sediment cores
 * Historical and current distribution
 * Collection and measurement of plant samples
@@ -167,9 +168,49 @@ knitr::kable(summary_stats_denc, format = "markdown", caption = "Summary Statist
   
 ```
 
-
-
 ### Lead (Pb)210 Dating
+
+1. Results from cores with marginal eelgrass site is summarized in Table 3. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(rplum)
+library(tidyr)
+library(ggplot2)
+library(readr)
+alta_co1 <-read_csv("c01Data.csv")%>% drop_na()%>%
+  transmute(
+    'Depth (cm)' = depthCm,
+    'Density g/cm^3' = dbdCm3,
+    '210Pb (Bq/Kg)' = activityPb210,
+    'sd(210Pb)' = sdPb210,
+    'Thickness (cm)' = thicknessCm3
+  
+  )
+
+knitr::kable(alta_co1, format = "markdown", caption = "C01: Core data from marginal eelgrass site ")
+
+```
+
+
+
+```{r}
+library(rplum)
+dir.create("/eelgrass/co1", recursive = TRUE)
+write.csv(alta_co1, "/eegrass/co1/alta_co1.csv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Conclusion
 1. How much organic carbon (C) is James Bay blue carbon ecosystems accumulating per unit area? 
@@ -192,6 +233,9 @@ CO2/vehicle/year} \approx 16,393.77 \, \text{vehicles/year}\).
 Therefore, a square kilometer of eelgrass soil with 1 meter thickness, having the average soil carbon density observed in the two sites, can sequester approximately 75,417.35 metric tons of CO2. This is equivalent to the annual emissions from approximately 16,394 motor vehicles.
 
 2. What are the threats to blue carbon ecosystems, and how do these threats affect the sequestration rate of blue carbon in James Bay and their traditional ecosystem services? 
+
+Eelgrass in James Bay are threatened by development in inland watershed.  The most significant of these development is the contruction and operation of hydro-electric complex in the region. When the dams were built,some of the major rivers 
+
 3. What is the state of James Bay eelgrass and other coastal ecosystems as blue carbon sinks/sources?
 4. How does climate change impact blue carbon accumulation in James Bay?
 5. What management actions best maintain and promote carbon sequestration and traditional use of blue carbon ecosystems in James Bay?

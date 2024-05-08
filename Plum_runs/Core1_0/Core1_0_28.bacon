@@ -1,0 +1,29 @@
+## Ran on Wed May  8 10:18:47 2024 
+
+Cal 0 : ConstCal;
+Cal 1 : IntCal20, 0;
+Cal 2 : Marine20;
+Cal 3 : SHCal20, 0;
+Cal 4 : ConstCal;
+
+##	alPhi	mPhi	alS	mS	Al	theta0	Radon_case	supported_data_file
+Cal 5 : Plum, 2, 50, 5, 10, 0.1, -73, 0, C:\Users\danto\Documents\00_Work\02_Projects\02_1670_blueCarbon_OCSPN\03_Analyses\AnalyzeBlueCarbon\Plum_runs/Core1_0/Core1_0_28.plum;
+##    , labID, X210Pb.Bq.kg., sd.210Pb., depth.cm., thickness.cm., density.g.cm.3., t.a, t.b, cc,  ... Plum: 210Pb data
+Det 0 : NA , 34.8, 1e+05, 0, 1, 20.2, 3, 4, 5;
+Det 1 : CO1 0_1 , 34.8, 2.51, 1, 1, 20.2, 3, 4, 5;
+Det 2 : CO1 2_3 , 35.27, 2.61, 3, 1, 24.7, 3, 4, 5;
+Det 3 : CO1 4_5 , 20.82, 1.62, 5, 1, 25.5, 3, 4, 5;
+Det 4 : CO1 6_7 , 16.48, 1.25, 7, 1, 21.2, 3, 4, 5;
+Det 5 : CO1 8_9 , 20.54, 1.59, 9, 1, 11.4, 3, 4, 5;
+Det 6 : CO1 10_11 , 21.43, 1.77, 11, 1, 16.1, 3, 4, 5;
+Det 7 : CO1 12_13 , 22.04, 1.74, 13, 1, 13.6, 3, 4, 5;
+Det 8 : CO1 14_15 , 15.04, 1.15, 15, 1, 14, 3, 4, 5;
+Det 9 : CO1 16_17 , 17.01, 1.39, 17, 1, 13.8, 3, 4, 5;
+Det 10 : CO1 18_19 , 15.94, 1.33, 19, 1, 15.7, 3, 4, 5;
+Det 11 : CO1 22_23 , 15.67, 1.21, 23, 1, 12.6, 3, 4, 5;
+Det 12 : CO1 26_27 , 15.11, 1.1, 27, 1, 11.9, 3, 4, 5;
+Det 13 : CO1 30_31 , 17.9, 1.4, -10, 1, 13.8, 3, 4, 5;
+Det 14 : NA , 15.11, 1e+08, 27.2, 1, 11.9, 3, 4, 5;
+
+##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax
+Bacon 0: FixT, 28,  -73,  1e+06,  -72.99,  -72.98,  5,  5,  1.5,  0.15, 0, 28;
